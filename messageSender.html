@@ -1,18 +1,40 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Message Sender</title>
 </head>
 <body>
     <h1>Message Sender</h1>
     <div>
         <form action="">
-            <label for="">data1</label>
-            <input type="text">
-            <label for="">data2</label>
-            <input type="text">
+            <label for="state">State</label> <br>
+            <select id="state" onchange="populateAssemblyConstituency()">
+                <option value="">Select State</option>
+                <option value="Andhra Pradesh">Andhra Pradesh</option>
+                <option value="Karnataka">Karnataka</option>
+                <option value="Tamil Nadu">Tamil Nadu</option>
+                <option value="Maharashtra">Maharashtra</option>
+                <option value="Uttar Pradesh">Uttar Pradesh</option>
+            </select> <br>
+            <label for="assemblyConstituency">Assembly Constituency</label> <br>
+            <select id="assemblyConstituency">
+                <option value="">Select Assembly Constituency</option>
+            </select> <br>
+            <label for="">Name</label> <br>
+            <input type="text"> <br>
+            <label for="">Gender</label> <br>
+            <input type="text"> <br>
+            <label for="">Epic No.</label> <br>
+            <input type="text"> <br>
+            <label for="">Booth no.</label> <br>
+            <input type="text"> <br>
+            <label for="">Polling station</label> <br>
+            <input type="text"> <br>
         </form>
+        <a href="displayData.html">Display Data</a>
     </div>
 </body>
+<script src="./messageSenderAPI.js"></script>
 </html>
