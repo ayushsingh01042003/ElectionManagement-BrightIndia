@@ -1,4 +1,4 @@
-
+//messageSenderAPI html
 const assemblyConstituencies = {
     "Andhra Pradesh": [
         "Assembly 1",
