@@ -1,4 +1,3 @@
-<!-- displaydata html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,6 +11,14 @@
     <div id="dataContainer"></div>
     <a href="messageSender.html">Go Back</a>
 </body>
-<script src="./displayData.js"></script>
-<script src="./twilioMessage.js"></script>
+<script src="./displaydata.js"></script>
+<script>
+    const sendSmsButton = document.getElementById('sendSmsButton');
+    sendSmsButton.addEventListener('click', () => {
+      fetch('/send-sms', { method: 'POST' })
+        .then(response => response.text())
+        .then(message => console.log(message))
+        .catch(error => console.error('Error:', error));
+    });
+</script>
 </html>

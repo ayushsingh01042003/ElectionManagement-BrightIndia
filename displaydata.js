@@ -23,28 +23,4 @@ function displayData() {
     });
 }
 
-// function sendSmsToPerson(name, phoneNumber) {
-//     console.log(`inside send message`)
-//     const accountSid = 'AC214306b960ee69d59967a96dca6b7f11'; // Replace with your Twilio Account SID
-//     const authToken = '0217384931ae5f95312d679bfb91f45f';   // Replace with your Twilio Auth Token
-
-//     const client = require('twilio')(accountSid, authToken);
-
-//     client.messages
-//         .create({
-//         body: `Hello ${name}, this is a reminder from the election commission.`,
-//         from: '+12188123829', // Replace with your Twilio phone number
-//         to: '+91' + phoneNumber   // Use the recipient's phone number passed as a parameter
-//         })
-//         .then(message => console.log('Message sent:', message.sid))
-//         .catch(error => console.error('Error:', error));
-// }
-
-// const sendSmsButton = document.getElementById('sendSmsButton'); // Fix typo in selector
-// sendSmsButton.addEventListener('click', () => {
-//     data.forEach(person => {
-//         sendSmsToPerson(person.Name, person['Contact No']);
-//     });
-// });
-
 displayData();
